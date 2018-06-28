@@ -32,3 +32,5 @@ bot.command :atis do |event|
     event.send_message("#{metar}")
     event.send_message("#{atis}")
 end
+
+bot.run
