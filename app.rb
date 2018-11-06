@@ -15,7 +15,7 @@ def scrape_metar(icao)
 
     doc = Nokogiri::HTML.parse(html, nil, charset)
     metar = doc.xpath('/html/body/div/div/div/div/table/tr/td')[17].inner_text
-    
+
     return metar
 end
 
